@@ -1,0 +1,35 @@
+{
+    "name": "corus/wp-composer",
+    "description": "Wordpress framework using composer",
+    "keywords": ["framework", "wordpress"],
+    "license": "MIT",
+    "type": "project",
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "wordpress/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "wordpress/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wordpress/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "wordpress"
+    },
+    "require": {
+        "php": ">=7.0.1",
+        "vlucas/phpdotenv": "~2.2",
+        "johnpbloch/wordpress": "^4.7",
+        "twig/twig": "^2.3",
+        "composer/installers": "^1.2",
+        "wpackagist-plugin/wordpress-2-step-verification": "^1.5",
+        "oscarotero/env": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
