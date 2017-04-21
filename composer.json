@@ -1,5 +1,5 @@
 {
-    "name": "corus/wp-composer",
+    "name": "cre8tive/wp-composer",
     "description": "Wordpress framework using composer",
     "keywords": ["framework", "wordpress"],
     "license": "MIT",
